@@ -50,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+CSRF_COOKIE_SAMESITE = 'None'  # Set to 'None' to allow cross-site requests
 
 ROOT_URLCONF = 'mysite.urls'
 
