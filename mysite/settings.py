@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
@@ -50,9 +51,12 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
 CSRF_COOKIE_SAMESITE = 'None'  # Set to 'None' to allow cross-site requests
 
 ROOT_URLCONF = 'mysite.urls'
+
+CSRF_TRUSTED_ORIGINS = ["https://pacific-coast-78888.herokuapp.com"]
 
 TEMPLATES = [
     {
