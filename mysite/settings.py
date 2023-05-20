@@ -39,24 +39,22 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-    'corsheaders'
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    #'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
 CSRF_COOKIE_SAMESITE = 'None'  # Set to 'None' to allow cross-site requests
-CSRF_COOKIE_SECURE = True
+
 ROOT_URLCONF = 'mysite.urls'
 
-CSRF_TRUSTED_ORIGINS = ["https://pacific-coast-78888.herokuapp.com"]
 
 TEMPLATES = [
     {
