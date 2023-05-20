@@ -53,7 +53,7 @@ MIDDLEWARE = [
 ]
 
 CSRF_COOKIE_SAMESITE = 'None'  # Set to 'None' to allow cross-site requests
-
+CSRF_COOKIE_SECURE = True
 ROOT_URLCONF = 'mysite.urls'
 
 CSRF_TRUSTED_ORIGINS = ["https://pacific-coast-78888.herokuapp.com"]
