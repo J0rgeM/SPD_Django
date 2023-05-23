@@ -3,10 +3,10 @@ install:
 	pip install -r requirements.txt
 
 runWindows:
-	python main.py
+	python manage.py runserver 0.0.0.0:8080
 
 runMac:
-	python3 main.py
+	python3 manage.py runserver 0.0.0.0:8080
 
 allWindows:
 	$(MAKE) install
