@@ -13,5 +13,5 @@ allWindows:
 	$(MAKE) runWindows
 
 allMac:
-	$(MAKE) install
-	$(MAKE) runMac
+    $(MAKE) install
+    $(MAKE) runMac
